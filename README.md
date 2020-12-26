@@ -19,7 +19,7 @@ So we decided to have a chatterbot that will provide quiz and you can find the a
 
 ## repl link
 https://repl.it/@ChikkalaPavitra/chatterbot#index.html
-(we are unable to deploy chatterbot in heroku, so we uploaded the repl link)
+( chatterbot is not deploying in heroku, so we uploaded the repl link)
 
 ## vedio link
 https://youtu.be/wQDTd_c4BhI
