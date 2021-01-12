@@ -17,9 +17,8 @@ So we decided to have a chatterbot that will provide quiz and you can find the a
 5. At the end the wrong answers with the score will be given.
 
 
-## repl link
-https://repl.it/@ChikkalaPavitra/chatterbot#index.html
-( chatterbot is not deploying in heroku, so we uploaded the repl link)
+## heroku link
+https://chatterbot32-62-64.herokuapp.com/
 
 ## vedio link
-https://youtu.be/wQDTd_c4BhI
+
