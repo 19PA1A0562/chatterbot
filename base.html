@@ -267,7 +267,7 @@
 			let i=1;
 
 		
-		function show(count,ques_display){
+		function show(count,ques_display){  // display the question number and question
 			userMsg('<h4>'+i+". "+ques_display.question[count]+'</h4>');
 			i++;
 		}
@@ -299,8 +299,7 @@
 			}
 			userMsg('<h3>'+"Quiz result ---->"+correct_ans+"/10"+'</h3>'+'<h4>'+text+'</h4>');
 		}
-		function next(e,ques_display){
-			
+		function next(e,ques_display){            // the question will be display and after answer the question it is checking and stored t=in the array
 			e.preventDefault();
 			let user_answer = document.getElementById("text").value;
 			console.log("question_count :",question_count);
@@ -340,12 +339,10 @@
 				$('#body').animate({scrollTop:1000000},800);
 			})
 		}
-		function sendMessage(e) {
-
+		function sendMessage(e) {     //after clicking on the send button 
 			e.preventDefault();
-			
-			var rawText=userInput();
-			function userInput(){
+			var rawText=userInput();   // user input
+			function userInput(){              // display the user msg and with user image
 				var rawText = $("#text").val();
 				var html = '<div class="container9">'+'<div ><img style="height:50px;width:50px;border-radius:50%;float:right;margin-right:10px;margin-left:10px;" src="https://www.shareicon.net/data/2017/01/06/868320_people_512x512.png"></div>'+'<div class="message-box my-message-box">' +
 									'<div class="message my-message"> ' + rawText + ' </div>' +
@@ -367,7 +364,7 @@
 			}
 			else if(rawText>=1 && rawText<=10){
 				var count = 0;
-				var ques_display = topicSelection(rawText);
+				var ques_display = topicSelection(rawText);   // retrieve the particular topic questions
 				
 				show(count,ques_display);
 				document.getElementById('but').onclick = function(){next(event,ques_display);}
